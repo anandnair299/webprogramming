@@ -1,6 +1,6 @@
 <html>
-<body>
-<h1><marquee style="color:red;">WELCOME TO FRESHERS WORLD !!!</marquee></h1>
+<body style="background-color:#81b9f5">
+<h1><marquee onmouseover="this.stop()" onmouseout="this.start()" style="color:red;">WELCOME TO FRESHERS WORLD !!!</marquee></h1>
 <form>
 <table border=2px width=80% align="center">
 <tr>
@@ -14,7 +14,22 @@
 
 <tr>
 <td>AGE</td>
-<td colspan=2><input type="number" id="age"></td>
+<td>
+<select name="age" value="age">
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+</select>
+</td>
 </tr>
 <tr>
 <td>PASSWORD</td>
@@ -28,13 +43,58 @@
 
 <tr>
 <td rowspan=4>SELECT YOUR SECURITY QUESTION</td>
-<td colspan=2><input type="radio" id="security">What is your pet name</td>
+<td colspan=2><input type="radio" name="security" value="petname">What is your pet name</td>
 </tr>
 
 <tr>
-<td colspan=2><input type="radio" id="security">who is your best friend</td>
+<td colspan=2><input type="radio" name="security" value="bestfriend">Who is your best friend</td>
 </tr>
+
+<tr>
+    <td colspan=2><input type="radio" name="security" value="favcolor">What is your favourite color</td>
+</tr>
+
+<tr>
+<td colspan=2><input type="radio" name="security" value="favteacher">Who is your favourite teacher</td>
+</tr>
+
+<tr>
+<td>Answer of security Question :
+<td colspan=2><input type="text"></td>
+</tr>
+
+<tr>
+<td>Email ID :
+<td colspan=2><input type="text"></td>
+</tr>
+
+<tr>
+<td>Languages Known :
+<td colspan=2><input type="checkbox" value="Malayalam"> Malayalam <input type="checkbox" value="English"> English <input type="checkbox" value="Hindi"> Hindi </td>
+</tr>
+
+<tr>
+<td rowspan=2>Phone Number :</td>
+<td><center><b>Home</b></center></td>
+<td><center><b>Office</b></center></td>
+</tr>
+
+<tr>
+<td><input type="number" id ="home"></td>
+<td><input type="number" id ="Office"></td>
+</tr>
+
+<tr>
+<td>Upload CV</td>
+<td colspan=2><input type="file" id ="cv"></td>
+</tr>
+
+<tr>
+    <td><center><button>Reset</button></center></td>
+    <td colspan=2><center><input type="submit" id ="submit" value="Submit"></center></td>
+    </tr>
 </table>
+
 </form>
 
 </body>
